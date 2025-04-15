@@ -1,0 +1,24 @@
+@import 'bsOverrides';
+@import 'componentInclude';
+
+
+.btn{
+  background: none;
+  border: none;
+  &-leftRailToggle{
+    padding: 0;
+    width: 3rem;
+    color: $blue;
+    
+    &.isOpen{
+      mat-icon{
+        transform: rotate(180deg);
+      }
+    }
+    mat-icon{
+      transition: transform 1s ease;
+      @include mat-icon-size(3rem);
+      margin: 0 10px;
+    }
+  }
+}

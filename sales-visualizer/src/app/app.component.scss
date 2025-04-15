@@ -1,0 +1,14 @@
+@use 'dvButtons';
+
+
+#main {
+  display: flex;
+  .leftRail {
+    flex-flow: column nowrap;
+    height: 100vh;
+    
+  }
+  .rightRail {
+    flex-grow: 1;
+  }
+}

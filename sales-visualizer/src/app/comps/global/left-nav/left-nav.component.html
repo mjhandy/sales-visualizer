@@ -1,1 +1,16 @@
-<p>left-nav works!</p>
+<div class="sidebar">
+  <nav class="">
+    <ul class="nav p-0">
+      @for ( route of routes; track route.title )
+      {
+        <li class="nav-item pt-2 pb-2">
+          <a [routerLink]="[route.path]" routerLinkActive="active" [target]="route.target"
+            class="nav-link d-flex flex-row align-items-center" [attr.aria-label]="route.label">
+            <mat-icon aria-hidden="false" attr.aria-label="{{ route.label }}" fontIcon="{{ route.icon}}"></mat-icon>
+            {{ route.label }}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</div>

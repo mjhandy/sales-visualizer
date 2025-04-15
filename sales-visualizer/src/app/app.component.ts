@@ -31,9 +31,9 @@ export class AppComponent {
   leftNav = 'small';
   title = 'sales-visualizer';
   isOpen= false;
+  
   toggleNav() {
     this.isOpen = !this.isOpen;
     this.leftNav = this.leftNav === 'small' ? 'large' : 'small';
-
   }
 }
