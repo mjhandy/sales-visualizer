@@ -5,5 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class KitchenDataService {
 
+  getURL = "";
+  postURL = "";
+
   constructor() { }
+
+  getData(){
+    
+  }
+
 }
