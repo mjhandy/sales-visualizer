@@ -1,5 +1,3 @@
-@import 'bsOverrides';
-@import 'componentInclude';
 
 
 .btn{
@@ -8,7 +6,7 @@
   &-leftRailToggle{
     padding: 0;
     width: 3rem;
-    color: $blue;
+    // color: $blue;
     
     &.isOpen{
       mat-icon{
@@ -17,7 +15,7 @@
     }
     mat-icon{
       transition: transform 1s ease;
-      @include mat-icon-size(3rem);
+      // @include mat-icon-size(3rem);
       margin: 0 10px;
     }
   }

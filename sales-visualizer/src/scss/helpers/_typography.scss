@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3s
+ {
+  font-family: var(--sv-font-family-sans-serif);
+  font-weight: 400;
+  line-height: $line-height-base;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1,.h1 {
+  font-size: var(--sv-h1-font-size);
+}
+h2,.h2 {
+  font-size: var(--sv-h2-font-size);
+}
+h3,.h3 {
+  font-size: var(--sv-h3-font-size);
+}
+
+a {
+  color: var(--sv-link-color);
+
+  &:hover {
+    color: var(--sv-link-color-hover);
+  }
+}

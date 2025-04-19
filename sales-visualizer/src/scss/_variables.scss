@@ -1,0 +1,44 @@
+// colours 
+$black: #141414;
+$white: #fff;
+$blue: #005EB8;
+$silver: #cdcdcd;
+$grey :#767676;
+$platinum: #E5E4E2;
+
+// package cards
+
+/// Default colour for borders
+$borderColour: lighten($grey, 10);
+
+// Typography
+$font-family-sans-serif: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$font-size-base: 1rem; // this can only have a REM unit, PX will cause an error
+$line-height-base: 1.5;
+
+$link-color: $blue;
+
+/* custom variable values:END */
+
+:root {
+  // colours
+  --sv-blue: #{$blue};
+  --sv-black: #{$black};
+  --sv-white: #{$white};
+  --sv-silver: #{$silver};
+  --sv-grey: #{$grey};
+  --sv-platinum: #{$platinum};
+  --sv-border-colour: #{$borderColour};
+  // typography
+  --sv-font-family-sans-serif: #{$font-family-sans-serif};
+  --sv-font-size-base: #{$font-size-base};
+  --sv-font-colour-base: #{$black};
+  --sv-line-height-base: #{$line-height-base};  
+  --sv-h1-font-size: #{$font-size-base * 3};
+  --sv-h2-font-size: #{$font-size-base * 2.5};
+  --sv-h3-font-size: #{$font-size-base * 2};
+  --sv-link-color: var(--sv-blue);
+  --sv-link-color-hover: #{darken($link-color, 5%)};
+}
+
+/* Utilities */
