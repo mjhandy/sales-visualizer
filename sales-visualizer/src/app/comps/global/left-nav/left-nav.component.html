@@ -2,12 +2,12 @@
   <ul class="nav dFlex flex-d-column">
     @for ( route of routes; track route.title )
     {
-      <li class="navIitem">
+      <li class="nav-item">
         <a 
           [routerLink]="[route.path]" 
           routerLinkActive="active" 
           [target]="route.target"
-          class="dFlex flex-d-row align-items-center" 
+          class="dFlex flex-d-row align-items-center nav-link" 
           [attr.aria-label]="route.label">
           <mat-icon aria-hidden="false" attr.aria-label="{{ route.label }}" fontIcon="{{ route.icon}}"></mat-icon>
           {{ route.label }}

@@ -19,7 +19,7 @@ import { LeftNavComponent } from './comps/global/left-nav/left-nav.component';
       ),
       state('large',
         style({
-          width: '175px'
+          width: '150px'
         })),
       transition('small <=> large', [
         animate('0.5s')

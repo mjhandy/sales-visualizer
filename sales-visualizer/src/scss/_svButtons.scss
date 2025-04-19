@@ -1,21 +1,23 @@
+@import 'componentInclude';
 
-
-.btn{
+.btn {
   background: none;
   border: none;
-  &-leftRailToggle{
+
+  &-leftRailToggle {
     padding: 0;
     width: 3rem;
-    // color: $blue;
-    
-    &.isOpen{
-      mat-icon{
+    color: var(--sv-blue);
+
+    &.isOpen {
+      mat-icon {
         transform: rotate(180deg);
       }
     }
-    mat-icon{
+
+    mat-icon {
       transition: transform 1s ease;
-      // @include mat-icon-size(3rem);
+      @include mat-icon-size(3rem);
       margin: 0 10px;
     }
   }

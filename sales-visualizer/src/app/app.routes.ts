@@ -18,10 +18,10 @@ export const routes: Routes = [
   {
     path: 'maders',    
     loadComponent: () => import('./comps/pages/maders/landing/landing.component').then((d) => d.MadersLandingComponent),
-    title: "Mader's Kitchen",
+    title: "Takeout",
     data:{      
-      label: "Mader's Kitchen",
-      icon: 'home',
+      label: "Takeout",
+      icon: 'takeout_dining',
     }  
   },
   {
@@ -29,8 +29,8 @@ export const routes: Routes = [
     loadComponent: () => import('./comps/pages/maders/chart/chart.component').then((d) => d.MadersChartComponent),
     title: "Mader's Kitchen",
     data:{      
-      label: "Mader's Kitchen",
-      icon: 'home',
+      label: "Charts",
+      icon: 'bar_chart',
     }  
   },
 ];
