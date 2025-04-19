@@ -1,10 +1,7 @@
-@use 'svButtons';
-
+@import 'svButtons';
 
 #main {
-  display: flex;
   .leftRail {
-    flex-flow: column nowrap;
     height: 100vh;    
   }
   .rightRail {

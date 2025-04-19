@@ -1,125 +1,158 @@
 .dFlex {
   display: flex;
+
   // row or column
-  &.flex-d {
-    &-row{
+  &.flex {
+    &-row {
       flex-direction: row;
     }
-    &-column{
+
+    &-column {
       flex-direction: column;
-    }    
+    }
   }
+
   // justification
-  &.justify-d {
-    &-start{
+  &.justify {
+    &-start {
       justify-content: flex-start;
     }
-    &-end{
+
+    &-end {
       justify-content: flex-end;
     }
-    &-center{
+
+    &-center {
       justify-content: center;
     }
-    &-between{
+
+    &-between {
       justify-content: space-between;
     }
-    &-around{
+
+    &-around {
       justify-content: space-around;
     }
   }
+
   // alignment
-  &.align-d {
-    &-start{
+  &.align {
+    &-start {
       align-items: flex-start;
     }
-    &-end{
+
+    &-end {
       align-items: flex-end;
     }
-    &-center{
+
+    &-center {
       align-items: center;
     }
-    &-baseline{
+
+    &-baseline {
       align-items: baseline;
     }
-    &-stretch{
+
+    &-stretch {
       align-items: stretch;
     }
   }
+
   // wrapping
-  &.wrap-d {
-    &-nowrap{
+  &.wrap {
+    &-nowrap {
       flex-wrap: nowrap;
     }
-    &-wrap{
+
+    &-wrap {
       flex-wrap: wrap;
     }
-    &-wrap-reverse{
+
+    &-wrap-reverse {
       flex-wrap: wrap-reverse;
     }
   }
+
   // ordering
-  &.order-d {
-    &-first{
+  &.order {
+    &-first {
       order: -1;
     }
-    &-last{
+
+    &-last {
       order: 1;
     }
-    &-0{
+
+    &-0 {
       order: 0;
     }
-    &-1{
+
+    &-1 {
       order: 1;
     }
-    &-2{
+
+    &-2 {
       order: 2;
     }
-    &-3{
+
+    &-3 {
       order: 3;
     }
   }
+
   // flex-grow
-  &.grow-d {
-    &-0{
+  &.grow {
+    &-0 {
       flex-grow: 0;
     }
-    &-1{
+
+    &-1 {
       flex-grow: 1;
     }
-    &-2{
+
+    &-2 {
       flex-grow: 2;
     }
-    &-3{
+
+    &-3 {
       flex-grow: 3;
     }
   }
+
   // flex-shrink
-  &.shrink-d {
-    &-0{
+  &.shrink {
+    &-0 {
       flex-shrink: 0;
     }
-    &-1{
+
+    &-1 {
       flex-shrink: 1;
     }
-    &-2{
+
+    &-2 {
       flex-shrink: 2;
     }
-    &-3{
+
+    &-3 {
       flex-shrink: 3;
     }
   }
+
   // flex-basis
-  &.basis-d {
-    &-0{
+  &.basis {
+    &-0 {
       flex-basis: 0;
     }
-    &-1{
+
+    &-1 {
       flex-basis: 1rem;
     }
-    &-2{
+
+    &-2 {
       flex-basis: 2rem;
     }
-    &-3{
+
+    &-3 {
       flex-basis: 3rem;
     }
   }

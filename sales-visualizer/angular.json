@@ -31,11 +31,9 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              
-              "src/styles.scss"
-            ],
-            
+            "styles": [              
+              "src/scss/main.scss"
+            ],            
             "stylePreprocessorOptions": {
               "sass": {
                 "silenceDeprecations": [
@@ -49,8 +47,7 @@
                 "./src/scss"
               ]
             },
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            "scripts": [            
             ]
           },
           "configurations": {
