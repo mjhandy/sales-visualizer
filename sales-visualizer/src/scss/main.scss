@@ -1,5 +1,6 @@
 // @import "bootstrap-grid";
-@import "variables";
-@import "helpers/reset";
-@import "helpers/flex";
-@import "helpers/typography";
+@import "framework/variables";
+@import "framework/helpers";
+@import "framework/mixins";
+
+@import "framework/grid";
