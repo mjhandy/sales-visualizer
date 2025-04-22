@@ -1,19 +1,20 @@
 import { Component } from '@angular/core';
 import { KitchenDataService } from '../../../../services/kitchen-data.service';
+import {MatTableModule} from '@angular/material/table';
 
 @Component({
   selector: 'app-landing',
-  imports: [],
+  imports: [MatTableModule],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })
 export class MadersLandingComponent {
   sales: any;
-  isLoading: boolean = true;
-  
+  isLoading: boolean = true;  
   isError: boolean = false;
+  displayedColumns: string[] = ['date', 'sales', 'items_sold'];
 
-  
+
   constructor(
     private kds: KitchenDataService,
   ){}
