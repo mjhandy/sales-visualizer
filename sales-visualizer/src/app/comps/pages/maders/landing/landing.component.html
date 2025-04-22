@@ -17,6 +17,14 @@
           <td mat-cell *matCellDef="let sale">{{ sale.items_sold }}</td>
         </ng-container>
 
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>Actions</th>
+          <td mat-cell *matCellDef="let sale">
+            <button mat-button (click)="editSales(sale)">Edit</button>
+            <button mat-button (click)="deleteSales(sale)">Delete</button>
+          </td>
+        </ng-container>
+
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
       </table>

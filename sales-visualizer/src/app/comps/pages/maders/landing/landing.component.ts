@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { KitchenDataService } from '../../../../services/kitchen-data.service';
+import { MadersDataService } from '../../../../services/maders-data.service';
 import {MatTableModule} from '@angular/material/table';
 
 @Component({
@@ -12,15 +12,15 @@ export class MadersLandingComponent {
   sales: any;
   isLoading: boolean = true;  
   isError: boolean = false;
-  displayedColumns: string[] = ['date', 'sales', 'items_sold'];
+  displayedColumns: string[] = ['date', 'sales', 'items_sold','actions'];
 
 
   constructor(
-    private kds: KitchenDataService,
+    private mds: MadersDataService,
   ){}
 
   ngOnInit(){
-    this.kds.getSalesData().subscribe({
+    this.mds.getSalesData().subscribe({
       next: (data) => {
         this.sales = data;
         this.isLoading = false;
@@ -31,5 +31,8 @@ export class MadersLandingComponent {
       }
     })
   }
+
+  editSales(sale: any){}
+  deleteSales(sale: any){}
 
 }
