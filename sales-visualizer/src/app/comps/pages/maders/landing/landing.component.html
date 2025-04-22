@@ -1,1 +1,3 @@
-<p>landing works!</p>
+@for (sales of sales; track sales; let i = $index){
+  <p>Date: {{ sales.date}}, Sales: {{ sales.sales}}, Items Sold: {{ sales.items_sold}}</p>
+}

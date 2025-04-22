@@ -1,0 +1,122 @@
+[
+  {
+    "date": "Mon, Mar 31, 2025",
+    "sales": "$38.89",
+    "items_sold": 11,
+    "pChange": "100.00%"
+  },
+  {
+    "date": "Tue, Apr 01, 2025",
+    "sales": "$81.81",
+    "items_sold": 26,
+    "pChange": "52.46%"
+  },
+  {
+    "date": "Wed, Apr 02, 2025",
+    "sales": "$65.80",
+    "items_sold": 20,
+    "pChange": "-24.33%"
+  },
+  {
+    "date": "Thu, Apr 03, 2025",
+    "sales": "$67.85",
+    "items_sold": 15,
+    "pChange": "3.02%"
+  },
+  {
+    "date": "Fri, Apr 04, 2025",
+    "sales": "$151.84",
+    "items_sold": 37,
+    "pChange": "55.31%"
+  },
+  {
+    "date": "Sat, Apr 05, 2025",
+    "sales": "$209.46",
+    "items_sold": 60,
+    "pChange": "27.51%"
+  },
+  {
+    "date": "Sun, Apr 06, 2025",
+    "sales": "$21.17",
+    "items_sold": 3,
+    "pChange": "-889.42%"
+  },
+  {
+    "date": "Mon, Apr 07, 2025",
+    "sales": "$83.16",
+    "items_sold": 27,
+    "pChange": "74.54%"
+  },
+  {
+    "date": "Tue, Apr 08, 2025",
+    "sales": "$102.76",
+    "items_sold": 25,
+    "pChange": "19.07%"
+  },
+  {
+    "date": "Wed, Apr 09, 2025",
+    "sales": "$61.32",
+    "items_sold": 18,
+    "pChange": "-67.58%"
+  },
+  {
+    "date": "Thu, Apr 10, 2025",
+    "sales": "$154.51",
+    "items_sold": 41,
+    "pChange": "60.31%"
+  },
+  {
+    "date": "Fri, Apr 11, 2025",
+    "sales": "$151.31",
+    "items_sold": 39,
+    "pChange": "-2.11%"
+  },
+  {
+    "date": "Sat, Apr 12, 2025",
+    "sales": "$59.80",
+    "items_sold": 20,
+    "pChange": "-153.03%"
+  },
+  {
+    "date": "Sun, Apr 13, 2025",
+    "sales": "$5.98",
+    "items_sold": 2,
+    "pChange": "-900.00%"
+  },
+  {
+    "date": "Mon, Apr 14, 2025",
+    "sales": "$91.69",
+    "items_sold": 22,
+    "pChange": "93.48%"
+  },
+  {
+    "date": "Tue, Apr 15, 2025",
+    "sales": "$108.19",
+    "items_sold": 28,
+    "pChange": "15.25%"
+  },
+  {
+    "date": "Wed, Apr 16, 2025",
+    "sales": "$101.28",
+    "items_sold": 22,
+    "pChange": "-6.82%"
+  },
+  {
+    "date": "Thu, Apr 17, 2025",
+    "sales": "$73.84",
+    "items_sold": 16,
+    "pChange": "-37.16%"
+  },
+  {
+    "date": "Sat, Apr 19, 2025",
+    "sales": "$101.35",
+    "items_sold": 25,
+    "pChange": "27.14%"
+  },
+  {
+    "date": "Sun, Apr 20, 2025",
+    "sales": "$5.98",
+    "items_sold": 2,
+    "pChange": "-1594.82%"
+  }
+]

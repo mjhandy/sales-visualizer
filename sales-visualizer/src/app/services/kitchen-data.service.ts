@@ -1,17 +1,23 @@
 import { Injectable } from '@angular/core';
 
+import { HttpClient } from '@angular/common/http';
+import { map, Observable } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
 export class KitchenDataService {
 
-  getURL = "";
+  getURL = "../mockData/madersKitchen.json";
   postURL = "";
 
-  constructor() { }
+  constructor(
+    private httpClient: HttpClient
+  ) { }
 
-  getData(){
-    
+   getSalesData(): Observable<any> {
+    // Fetch the data from the JSON file
+    return this.httpClient.get<any>(this.getURL);    
   }
 
 }
