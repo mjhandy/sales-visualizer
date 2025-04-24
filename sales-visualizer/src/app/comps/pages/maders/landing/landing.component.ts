@@ -9,7 +9,7 @@ import {MatTableModule} from '@angular/material/table';
 
 @Component({
   selector: 'app-landing',
-  imports: [MatTableModule],
+  imports: [MatTableModule, LoadingComponent],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })
@@ -17,6 +17,7 @@ export class MadersLandingComponent {
   sales: any;
   isLoading: boolean = true;  
   isError: boolean = false;
+  errorMessage = "error";
   displayedColumns: string[] = ['date', 'sales', 'items_sold','actions'];
 
 

@@ -1,6 +1,10 @@
 <div class="container">
   <div class="row">
     <div class="col-8">
+      <app-loading 
+          [isLoading]="isLoading" 
+          [isError]="isError" 
+          [errorMessage]="errorMessage"></app-loading>
       <table mat-table [dataSource]="sales" class="mat-elevation-z8">
         <ng-container matColumnDef="date">
           <th mat-header-cell *matHeaderCellDef>Date</th>
