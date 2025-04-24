@@ -1,0 +1,26 @@
+
+@import 'componentInclude';
+
+.snackDefault{
+  border-radius: 10px;
+  text-align: center;
+  @include boxShadow (2, 3, 300);
+}
+
+.snack{
+
+  &-alert{
+    .mdc-snackbar__surface.mat-mdc-snackbar-surface{
+      @extend .snackDefault;
+      background: rgba(var(--web-dark-rgb),0.75);
+      border: 2px solid var(--web-dark);
+    }
+  }
+  &-error{
+    .mdc-snackbar__surface.mat-mdc-snackbar-surface{
+      @extend .snackDefault;
+      background: rgba(var(--web-danger-rgb),0.75);
+      border: 2px solid var(--web-red);
+    }
+  }
+}
