@@ -17,12 +17,14 @@ export class MadersLandingComponent {
   sales: any;
   isLoading: boolean = true;  
   isError: boolean = false;
-  errorMessage = "error";
+  errorMessage : string = '';
   displayedColumns: string[] = ['date', 'sales', 'items_sold','actions'];
+  snackMessage: string = '';
 
 
   constructor(
     private mds: MadersDataService,
+    private snackBar: SnackBarService
   ){}
 
   ngOnInit(){
@@ -30,10 +32,16 @@ export class MadersLandingComponent {
       next: (data) => {
         this.sales = data;
         this.isLoading = false;
+        this.snackMessage = 'newsLoaded';
+        this.snackBar.openSBAlert(this.snackMessage);
       },
       error: (error) =>{
         this.isLoading = false;
         this.isError = true;
+        this.errorMessage = 'Error loading data';
+        console.error('Error loading data:', error);
+        this.snackMessage = 'loadError';
+        this.snackBar.openSBError(this.snackMessage);
       }
     })
   }
