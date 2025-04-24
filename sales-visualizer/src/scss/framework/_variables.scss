@@ -3,6 +3,7 @@ $black: #141414;
 $white: #fff;
 $blue: #005EB8;
 $silver: #cdcdcd;
+$green: #00B140;
 $grey :#767676;
 $platinum: #E5E4E2;
 
@@ -28,6 +29,10 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 
+// snackbar
+$sb-alert--border: $green;
+$sb-alert--bg: rgba(lighten($green, 50%), 0.9);
+
 /* custom variable values:END */
 
 :root {
@@ -49,6 +54,10 @@ $grid-breakpoints: (
   --sv-h3-font-size: #{$font-size-base * 2};
   --sv-link-color: var(--sv-blue);
   --sv-link-color-hover: #{darken($link-color, 5%)};
+  // snackbar
+  --sv-snackbar-alert-border: #{$sb-alert--border};
+  --sv-snackbar-alert-bg: #{$sb-alert--bg};
+  //
 }
 
 /* Utilities */

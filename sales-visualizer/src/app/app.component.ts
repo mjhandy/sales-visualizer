@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { trigger, state, animate, transition, style } from '@angular/animations';
-
+import { TranslateModule } from "@ngx-translate/core";
+import { TranslateService } from "@ngx-translate/core";
 import { MatIconModule } from '@angular/material/icon';
 
 import { LeftNavComponent } from './comps/global/left-nav/left-nav.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,MatIconModule, LeftNavComponent],
+  imports: [RouterOutlet,MatIconModule, LeftNavComponent, TranslateModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   animations: [
@@ -31,6 +32,13 @@ export class AppComponent {
   leftNav = 'small';
   title = 'sales-visualizer';
   isOpen= false;
+
+  constructor(
+    private translate: TranslateService,
+  ) {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en'); 
+  }
   
   toggleNav() {
     this.isOpen = !this.isOpen;

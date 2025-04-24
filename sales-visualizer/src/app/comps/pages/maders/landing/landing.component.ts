@@ -32,7 +32,7 @@ export class MadersLandingComponent {
       next: (data) => {
         this.sales = data;
         this.isLoading = false;
-        this.snackMessage = 'newsLoaded';
+        this.snackMessage = 'dataLoaded';
         this.snackBar.openSBAlert(this.snackMessage);
       },
       error: (error) =>{

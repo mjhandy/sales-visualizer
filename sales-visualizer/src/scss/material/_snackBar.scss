@@ -11,8 +11,8 @@
   &-alert{
     .mdc-snackbar__surface.mat-mdc-snackbar-surface{
       @extend .snackDefault;
-      background: blue;
-      border: 2px solid $borderColour;
+      background: var(--sv-snackbar-alert-bg);
+      border: 2px solid var(--sv-snackbar-alert-border);
     }
   }
   &-error{

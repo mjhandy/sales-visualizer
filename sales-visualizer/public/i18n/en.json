@@ -1,0 +1,10 @@
+{
+  "error":{
+    "001": "Data has loaded successfully"
+  },
+  "snackbar": {
+    "dataLoaded": "Data Loaded",
+    "dataNotLoaded": "Data Not Loaded",
+    "error": "Form Submission Failed!"
+  }
+}
