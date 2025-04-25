@@ -1,4 +1,17 @@
 {
+  "buttons":{
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "reset": "Reset",
+    "add": "Add",
+    "remove": "Remove",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "load": "Load",
+    "export": "Export",
+    "import": "Import"
+  },
   "error":{
     "001": "Data has loaded successfully"
   },

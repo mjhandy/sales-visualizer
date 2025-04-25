@@ -22,10 +22,16 @@
         </ng-container>
 
         <ng-container matColumnDef="actions">
-          <th mat-header-cell *matHeaderCellDef>Actions</th>
-          <td mat-cell *matCellDef="let sale">
-            <button mat-button (click)="editSales(sale)">Edit</button>
-            <button mat-button (click)="deleteSales(sale)">Delete</button>
+          <th mat-header-cell *matHeaderCellDef class="actions">Actions</th>
+          <td mat-cell *matCellDef="let sale" class="actions">
+            <button mat-button (click)="editSales(sale)" class="btn btn-edit">
+              <div class='visibility-hidden'>Edit</div>
+              <mat-icon aria-hidden="false" fontIcon="edit"></mat-icon>
+            </button>
+            <button mat-button (click)="deleteSales(sale)" class="btn btn-delete">
+              <div class='visibility-hidden'>Delete</div>
+              <mat-icon aria-hidden="false" fontIcon="delete"></mat-icon>
+            </button>
           </td>
         </ng-container>
 

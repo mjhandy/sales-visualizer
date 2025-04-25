@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
-
-
 import { LoadingComponent } from '../../../global/loading/loading.component';
-
 import { SnackBarService } from '../../../../services/global/snack-bar.service';
 import { MadersDataService } from '../../../../services/maders-data.service';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-landing',
-  imports: [MatTableModule, LoadingComponent],
+  imports: [MatTableModule, LoadingComponent, MatIconModule],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })

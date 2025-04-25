@@ -26,5 +26,9 @@
   @each $label, $value in $sb{
     --#{$prefix}-snackbar-#{$label}: #{$value};
   }
+  // buttons
+  @each $label, $value in $buttons{
+    --#{$prefix}-button-#{$label}: #{$value};
+  }
 
 }

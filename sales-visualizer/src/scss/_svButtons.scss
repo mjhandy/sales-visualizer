@@ -7,7 +7,7 @@
   &-leftRailToggle {
     padding: 0;
     width: 3rem;
-    color: var(--sv-blue);
+    color: var(--sv-button-primary);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -22,5 +22,19 @@
       @include mat-icon-size(3rem);
       margin: 0 10px;
     }
+  }
+  &-primary {
+    background-color: var(--sv-button-primary);
+  }
+  &-secondary {
+    background-color: var(--sv-button-secondary);
+  }
+  &-edit{
+    background: transparent;
+    color: green;
+  }
+  &-delete{
+    background: transparent;
+    color: red;
   }
 }
