@@ -1,16 +1,43 @@
+// prefix
+$prefix: 'sv';
+
 // colours 
+// scss-docs-start gray-color-variables
+$white:    #fff;
+// grays
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
 $black: #141414;
 $white: #fff;
-$blue: #005EB8;
+$blue: #1883D3;
 $silver: #cdcdcd;
-$green: #00B140;
-$grey :#767676;
+$green: #0F5132;
 $platinum: #E5E4E2;
+$red: #B50018;
+$yellow :#FFD323;
 
 // package cards
 
 /// Default colour for borders
-$borderColour: lighten($grey, 10);
+$borderColour: lighten($gray-600, 10);
 
 // Typography
 $font-family-sans-serif: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -18,6 +45,16 @@ $font-size-base: 1rem; // this can only have a REM unit, PX will cause an error
 $line-height-base: 1.5;
 
 $link-color: $blue;
+
+// heading sizes
+$heading:(
+  h1: $font-size-base * 3,
+  h2: $font-size-base * 2.5,
+  h3: $font-size-base * 2,
+  h4: $font-size-base * 1.5,
+  h5: $font-size-base * 1.25,
+  h6: $font-size-base * 1.125
+);
 
 // grid 
 $grid-breakpoints: (
@@ -30,34 +67,20 @@ $grid-breakpoints: (
 );
 
 // snackbar
-$sb-alert--border: $green;
-$sb-alert--bg: rgba(lighten($green, 50%), 0.9);
+$sb:(
+  notification: $gray-700,
+  notification-bg: rgba($gray-700, 0.70),
+  alert: $green,
+  alert-bg: rgba($green, 0.70),
+  error: $red,
+  error-bg: rgba($red, 0.70),
+  warning: $yellow,
+  warning-bg: rgba($yellow, 0.90),
+);
+
 
 /* custom variable values:END */
 
-:root {
-  // colours
-  --sv-blue: #{$blue};
-  --sv-black: #{$black};
-  --sv-white: #{$white};
-  --sv-silver: #{$silver};
-  --sv-grey: #{$grey};
-  --sv-platinum: #{$platinum};
-  --sv-border-colour: #{$borderColour};
-  // typography
-  --sv-font-family-sans-serif: #{$font-family-sans-serif};
-  --sv-font-size-base: #{$font-size-base};
-  --sv-font-colour-base: #{$black};
-  --sv-line-height-base: #{$line-height-base};  
-  --sv-h1-font-size: #{$font-size-base * 3};
-  --sv-h2-font-size: #{$font-size-base * 2.5};
-  --sv-h3-font-size: #{$font-size-base * 2};
-  --sv-link-color: var(--sv-blue);
-  --sv-link-color-hover: #{darken($link-color, 5%)};
-  // snackbar
-  --sv-snackbar-alert-border: #{$sb-alert--border};
-  --sv-snackbar-alert-bg: #{$sb-alert--bg};
-  //
-}
+
 
 /* Utilities */

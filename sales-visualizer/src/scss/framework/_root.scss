@@ -1,0 +1,30 @@
+:root {
+  // colours
+  --#{$prefix}-blue: #{$blue};
+  --sv-black: #{$black};
+  --sv-white: #{$white};
+  --sv-silver: #{$silver};
+  --sv-platinum: #{$platinum};
+  --sv-border-colour: #{$borderColour};
+  // greys
+  @each $color, $value in $grays {
+    --#{$prefix}-gray-#{$color}: #{$value};
+  }
+
+  // typography
+  --sv-font-family-sans-serif: #{$font-family-sans-serif};
+  --sv-font-size-base: #{$font-size-base};
+  --sv-font-colour-base: #{$black};
+  --sv-line-height-base: #{$line-height-base};  
+  // heading sizes
+  @each $heading, $size in $heading {
+    --#{$prefix}-#{$heading}-font-size: #{$size};
+  }
+  --sv-link-color: var(--sv-blue);
+  --sv-link-color-hover: #{darken($link-color, 5%)};
+  // snackbar
+  @each $label, $value in $sb{
+    --#{$prefix}-snackbar-#{$label}: #{$value};
+  }
+
+}
