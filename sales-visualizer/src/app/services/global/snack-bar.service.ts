@@ -16,7 +16,7 @@ export class SnackBarService {
     this.message = this.translate.instant('snackbar.' + message   );
     this.snackBar.open(this.message, '', {
       duration: 1500,
-      panelClass: ['snack-alert']
+      panelClass: ['snack-notification']
     });
   }
 

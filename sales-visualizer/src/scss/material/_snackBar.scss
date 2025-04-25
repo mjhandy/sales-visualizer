@@ -7,19 +7,34 @@
 }
 
 .snack{
-
+  &-notification{
+    .mdc-snackbar__surface.mat-mdc-snackbar-surface{
+      @extend .snackDefault;
+      background: var(--sv-snackbar-notification-bg);
+      border: 2px solid var(--sv-snackbar-notification-border);
+      .mdc-snackbar__label {
+        color: var(--sv-snackbar-notification-copy);
+      }
+    }
+  }
   &-alert{
     .mdc-snackbar__surface.mat-mdc-snackbar-surface{
       @extend .snackDefault;
       background: var(--sv-snackbar-alert-bg);
       border: 2px solid var(--sv-snackbar-alert-border);
+      .mdc-snackbar__label {
+        color: var(--sv-snackbar-alert-copy);
+      }
     }
   }
   &-error{
     .mdc-snackbar__surface.mat-mdc-snackbar-surface{
       @extend .snackDefault;
-      background: rgba(var(--web-danger-rgb),0.75);
-      border: 2px solid var(--web-red);
+      background: rgba(var(--sv-snackbar-error-bg),0.75);
+      border: 2px solid var(--sv-snackbar-error-border);
+      .mdc-snackbar__label {
+        color: var(--sv-snackbar-error-copy);
+      }      
     }
   }
 }

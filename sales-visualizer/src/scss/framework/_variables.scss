@@ -68,13 +68,14 @@ $grid-breakpoints: (
 
 // snackbar
 $sb:(
-  notification: $gray-700,
+  notification-border: $gray-700,
   notification-bg: rgba($gray-700, 0.70),
-  alert: $green,
-  alert-bg: rgba($green, 0.70),
-  error: $red,
-  error-bg: rgba($red, 0.70),
-  warning: $yellow,
+  notification-copy: $white,
+  alert-border: $green,
+  alert-bg-border: rgba($green, 0.70),
+  error-border: $red,
+  error-bg-border: rgba($red, 0.70),
+  warning-border: $yellow,
   warning-bg: rgba($yellow, 0.90),
 );
 // buttons
