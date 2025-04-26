@@ -16,12 +16,12 @@
   --sv-font-size-base: #{$font-size-base};
   --sv-font-colour-base: #{$black};
   --sv-line-height-base: #{$line-height-base};  
+  --sv-link-color: var(--sv-blue);
+  --sv-link-color-hover: #{darken($link-color, 5%)};
   // heading sizes
   @each $heading, $size in $heading {
     --#{$prefix}-#{$heading}-font-size: #{$size};
   }
-  --sv-link-color: var(--sv-blue);
-  --sv-link-color-hover: #{darken($link-color, 5%)};
   // snackbar
   @each $label, $value in $sb{
     --#{$prefix}-snackbar-#{$label}: #{$value};

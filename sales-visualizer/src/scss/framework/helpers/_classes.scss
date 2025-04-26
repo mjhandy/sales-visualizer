@@ -14,3 +14,19 @@
     visibility: visible;
   }
 }
+
+
+.text-align {
+  &-left {
+    text-align: left !important;
+  }
+  &-center {
+    text-align: center !important;
+  }
+  &-right {
+    text-align: right !important;
+  }
+  &-justify {
+    text-align: justify !important;
+  }
+}

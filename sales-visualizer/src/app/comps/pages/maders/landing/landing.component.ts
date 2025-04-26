@@ -37,14 +37,16 @@ export class MadersLandingComponent {
         this.isLoading = false;
         this.isError = true;
         this.errorMessage = 'Error loading data';
-        console.error('Error loading data:', error);
-        this.snackMessage = 'loadError';
+        console.error('Error loading data:', error.status);
+        this.snackMessage = 'dataNotLoaded';
         this.snackBar.openSBError(this.snackMessage);
       }
     })
   }
 
-  editSales(sale: any){}
+  editSales(sale: any){
+    console.log('Edit sale:', sale);
+  }
   deleteSales(sale: any){}
 
 }

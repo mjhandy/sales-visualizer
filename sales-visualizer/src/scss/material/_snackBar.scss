@@ -30,7 +30,7 @@
   &-error{
     .mdc-snackbar__surface.mat-mdc-snackbar-surface{
       @extend .snackDefault;
-      background: rgba(var(--sv-snackbar-error-bg),0.75);
+      background: var(--sv-snackbar-error-bg);
       border: 2px solid var(--sv-snackbar-error-border);
       .mdc-snackbar__label {
         color: var(--sv-snackbar-error-copy);

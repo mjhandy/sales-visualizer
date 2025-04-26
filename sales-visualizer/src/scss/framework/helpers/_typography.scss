@@ -29,3 +29,15 @@ a {
     color: var(--sv-link-color-hover);
   }
 }
+
+.font-weight{
+  &--bold {
+    font-weight: 700 !important;
+  }
+  &--normal {
+    font-weight: 400 !important;
+  }
+  &--light {
+    font-weight: 300 !important;
+  }
+}
