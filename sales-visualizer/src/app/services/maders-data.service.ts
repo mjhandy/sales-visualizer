@@ -9,7 +9,7 @@ import { map, Observable } from 'rxjs';
 export class MadersDataService {
 
   // getURL = "../mockData/madersKitchen.json";
-  getURL = "http://sales-data.local/api/data.php";
+  private getURL = "http://sales-data.local/api/data.php";
   postURL = "";
 
   constructor(
